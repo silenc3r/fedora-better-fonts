@@ -1,10 +1,10 @@
-%global fontname    archivo-black
-%global fontconf    45-%{fontname}.conf
+%global fontname archivo-black
+%global fontconf 64-%{fontname}.conf
 
 Name:    %{fontname}-fonts
 Version: 1.0004
-Release: 1%{?dist}
-Summary: Grotesque sans-serif typeface family derived from Chivo
+Release: 2%{?dist}
+Summary: Grotesque sans-serif typeface derived from Chivo. Black style
 
 Group:   User Interface/X
 License: OFL
@@ -45,5 +45,8 @@ sed -i 's/\r$//' LICENSE
 %license LICENSE
 
 %changelog
+* Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> 1.0004-2
+- Update fontconfig and it's priority
+
 * Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> 1.0004-1
 - Initial packaging.
