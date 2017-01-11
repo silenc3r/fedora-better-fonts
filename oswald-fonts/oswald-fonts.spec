@@ -1,17 +1,17 @@
 %global fontname oswald
-%global fontconf 45-%{fontname}.conf
+%global fontconf 64-%{fontname}.conf
 
 Name:    %{fontname}-fonts
 Version: 4.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Oswald is a reworking of the classic Gothic and Grotesque type styles
 
 Group:   User Interface/X
 License: OFL
 URL:     https://fonts.google.com/specimen/Oswald
 Source0: %{name}-%{version}.tar.xz
-Source1: oswald-fontconfig.conf
-Source2: getoswald.sh
+Source1: %{fontname}-fontconfig.conf
+Source2: get-%{fontname}.sh
 
 BuildArch:     noarch
 BuildRequires: fontpackages-devel
@@ -49,5 +49,8 @@ sed -i 's/\r$//' LICENSE
 %license LICENSE
 
 %changelog
+* Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 4.0-2
+- Update fontconfig and it's priority.
+
 * Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> - 4.0-1
 - Initial packaging.
