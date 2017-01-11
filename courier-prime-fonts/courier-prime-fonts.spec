@@ -1,9 +1,9 @@
 %global fontname    courier-prime
-%global fontconf    45-%{fontname}.conf
+%global fontconf    61-%{fontname}.conf
 
 Name:    %{fontname}-fonts
 Version: 1.203
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: A free, improved, classical monospaced typeface
 
 Group:   User Interface/X
@@ -19,7 +19,7 @@ Requires:      fontpackages-filesystem
 %description
 Courier Prime is a TrueType monospaced font designed specifically
 for screenplays. It was designed by Alan Dague-Greene for John August
-and released by Quote-Unquote Apps under the SIL Open Font License (OFL). 
+and released by Quote-Unquote Apps under the SIL Open Font License (OFL).
 
 
 %prep
@@ -49,5 +49,8 @@ sed -i 's/\r$//' LICENSE-FAQ
 %doc "Read me.txt"
 
 %changelog
+* Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> - 1.203-2
+- Update fontconfig and it's priority
+
 * Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> - 1.203-1
 - Initial packaging.
