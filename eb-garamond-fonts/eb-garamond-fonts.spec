@@ -1,9 +1,9 @@
 %global fontname eb-garamond
-%global fontconf 45-%{fontname}.conf
+%global fontconf 62-%{fontname}.conf
 
 Name:    %{fontname}-fonts
 Version: 0.016
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Free version of Garamond font
 Group:   User Interface/X
 License: OFL
@@ -48,5 +48,8 @@ sed -i 's/\r$//' COPYING
 %doc Changes README.markdown
 
 %changelog
+* Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> 0.016-2
+- Update fontconfig and it's priority.
+
 * Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> 0.016-1
 - Initial packaging.
