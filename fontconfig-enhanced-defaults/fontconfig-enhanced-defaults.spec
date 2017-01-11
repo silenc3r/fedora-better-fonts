@@ -5,7 +5,7 @@ Summary: Enhanced default settings for Fontconfig and FreeType
 
 Group:   System Environment/Libraries
 License: Public Domain
-URL:     http://bohoomil.com
+URL:     https://github.com/silenc3r/fedora-better-fonts
 Source0: 10_fontconfig-enhanced-defaults.gschema.override
 Source1: fontconfig-enhanced-defaults.sh
 Source2: 10-enhanced-defaults.conf
