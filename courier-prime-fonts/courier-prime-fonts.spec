@@ -49,8 +49,8 @@ sed -i 's/\r$//' LICENSE-FAQ
 %doc "Read me.txt"
 
 %changelog
-* Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> - 1.203-2
-- Update fontconfig and it's priority
+* Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 1.203-2
+- Update fontconfig and it's priority.
 
 * Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> - 1.203-1
 - Initial packaging.

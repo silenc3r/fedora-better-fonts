@@ -46,7 +46,7 @@ sed -i 's/\r$//' LICENSE
 
 %changelog
 * Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> 1.0004-2
-- Update fontconfig and it's priority
+- Update fontconfig and it's priority.
 
 * Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> 1.0004-1
 - Initial packaging.
