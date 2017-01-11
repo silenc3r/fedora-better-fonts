@@ -41,17 +41,30 @@ Requires:      signika-fonts
 Font replacement rules for popular MS fonts. Based on Bohoomil's fontconfig
 ultimate. This package will install all required fonts as dependencies.
 
+%prep
+
+%build
 
 %install
 install -m 0755 -d %{buildroot}%{_fontconfig_templatedir} \
                    %{buildroot}%{_fontconfig_confdir}
 
-install -m 0644 -p *.conf \
-        %{buildroot}%{_fontconfig_templatedir}
-for fconf in *.conf; do
-    ln -s %{_fontconfig_templatedir}/$fconf \
-        %{buildroot}%{_fontconfig_confdir}/$fconf
-done
+install -m 0644 -p %{SOURCE0} \
+        %{buildroot}%{_fontconfig_templatedir}/36-repl-liberation-fonts.conf
+ln -s %{_fontconfig_templatedir}/36-repl-liberation-fonts.conf \
+      %{buildroot}%{_fontconfig_confdir}/36-repl-liberation-fonts.conf
+install -m 0644 -p %{SOURCE1} \
+        %{buildroot}%{_fontconfig_templatedir}/37-repl-global-free.conf
+ln -s %{_fontconfig_templatedir}/37-repl-global-free.conf \
+      %{buildroot}%{_fontconfig_confdir}/37-repl-global-free.conf
+install -m 0644 -p %{SOURCE2} \
+        %{buildroot}%{_fontconfig_templatedir}/52-latin-free.conf
+ln -s %{_fontconfig_templatedir}/52-latin-free.conf \
+      %{buildroot}%{_fontconfig_confdir}/52-latin-free.conf
+install -m 0644 -p %{SOURCE3} \
+        %{buildroot}%{_fontconfig_templatedir}/66-aliases-wine-free.conf
+ln -s %{_fontconfig_templatedir}/66-aliases-wine-free.conf \
+      %{buildroot}%{_fontconfig_confdir}/66-aliases-wine-free.conf
 
 %files
 %{_fontconfig_confdir}/*
