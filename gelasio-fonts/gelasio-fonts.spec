@@ -1,9 +1,9 @@
 %global fontname gelasio
-%global fontconf 45-%{fontname}.conf
+%global fontconf 62-%{fontname}.conf
 
 Name:    %{fontname}-fonts
 Version: 1.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Gelasio serif family by Eben Sorkin
 
 Group:   User Interface/X
@@ -44,5 +44,8 @@ ln -s %{_fontconfig_templatedir}/%{fontconf} \
 %_font_pkg -f %{fontconf} *.ttf
 
 %changelog
+* Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 1.0-2
+- Update fontconfig and it's priority.
+
 * Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> - 1.0-1
 - Initial packaging.
