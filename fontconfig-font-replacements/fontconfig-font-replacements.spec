@@ -1,5 +1,5 @@
 Name:    fontconfig-font-replacements
-Version: 0.002
+Version: 0.003
 Release: 1%{?dist}
 Summary: Font replacement rules for popular MS fonts
 
@@ -72,6 +72,9 @@ ln -s %{_fontconfig_templatedir}/66-aliases-wine-free.conf \
 %{_fontconfig_templatedir}/*
 
 %changelog
+* Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 0.003-1
+- Update font replacement rules
+
 * Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 0.002-1
 - Set monospace font to Source Code Pro
 - Add fantasy and cursive default fonts
