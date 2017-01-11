@@ -1,16 +1,16 @@
 %global fontname merriweather-sans
-%global fontconf 45-%{fontname}.conf
+%global fontconf 62-%{fontname}.conf
 
 Name:    %{fontname}-fonts
 Version: 1.006
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Merriweather Sans-Serif font family by Eben Sorkin
 
 License:  OFL
 URL:      www.sorkintype.com
 Source0: %{name}-%{version}.tar.xz
-Source1: merriweather-sans.conf
-Source2: getmerriweathersans.sh
+Source1: %{fontname}-fontconfig.conf
+Source2: get-%{fontname}.sh
 
 BuildArch:     noarch
 BuildRequires: fontpackages-devel
@@ -47,5 +47,8 @@ sed -i 's/\r$//' LICENSE
 %license LICENSE
 
 %changelog
+* Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 1.006-2
+- Update fontconfig and it's priority.
+
 * Fri Jan 06 2017 Dawid Zych <dawid.zych@yandex.com> - 1.006-1
 - Initial packaging.
