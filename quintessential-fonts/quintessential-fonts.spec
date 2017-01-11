@@ -1,9 +1,9 @@
 %global fontname quintessential
-%global fontconf 45-%{fontname}.conf
+%global fontconf 62-%{fontname}.conf
 
 Name:    %{fontname}-fonts
 Version: 1.001
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Calligraphic lettering typeface based on the Italic Hand
 
 Group:   User Interface/X
@@ -11,7 +11,7 @@ License: OFL
 URL:     https://fonts.google.com/specimen/Quintessential
 Source0: %{name}-%{version}.tar.xz
 Source1: %{fontname}-fontconfig.conf
-Source2: getquintessential.sh
+Source2: get-%{fontname}.sh
 
 BuildArch:      noarch
 BuildRequires:  fontpackages-devel
@@ -47,5 +47,8 @@ sed -i 's/\r$//' LICENSE
 %license LICENSE
 
 %changelog
+* Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 1.001-2
+- Update fontconfig and it's priority.
+
 * Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> - 1.001-1
 - Initial packaging.
