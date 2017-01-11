@@ -1,5 +1,5 @@
 Name:    fontconfig-font-replacements
-Version: 0.001
+Version: 0.002
 Release: 1%{?dist}
 Summary: Font replacement rules for popular MS fonts
 
@@ -14,6 +14,7 @@ Source3: 66-aliases-wine-free.conf
 BuildArch:     noarch
 BuildRequires: fontpackages-devel
 Requires:      fontpackages-filesystem
+Requires:      adobe-source-code-pro-fonts
 Requires:      archivo-black-fonts
 Requires:      cabin-fonts
 Requires:      courier-prime-fonts
@@ -71,5 +72,9 @@ ln -s %{_fontconfig_templatedir}/66-aliases-wine-free.conf \
 %{_fontconfig_templatedir}/*
 
 %changelog
+* Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 0.002-1
+- Set monospace font to Source Code Pro
+- Add fantasy and cursive default fonts
+
 * Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> - 0.001-1
 - Initial packaging.
