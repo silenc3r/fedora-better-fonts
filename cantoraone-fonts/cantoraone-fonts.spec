@@ -1,9 +1,9 @@
 %global fontname cantoraone
-%global fontconf 45-%{fontname}.conf
+%global fontconf 63-%{fontname}.conf
 
 Name:    %{fontname}-fonts
 Version: 1.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Cantora is a friendly semi formal, semi condensed, semi sans serif
 
 License: OFL
@@ -47,5 +47,8 @@ done
 %doc FONTLOG.txt
 
 %changelog
+* Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 1.1-2
+- Update fontconfig and it's priority.
+
 * Thu Jan 05 2017 Dawid Zych <dawid.zych@yandex.com> - 1.1-1
 - Initial packaging.
