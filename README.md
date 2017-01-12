@@ -1,5 +1,5 @@
 # Better fonts for Fedora
-This repository provides libraries that enable subpixel font rendering and
+This repository contains libraries that enable subpixel font rendering and
 provide substitutions for popular Microsoft fonts on Fedora.
 
 COPR repository: https://copr.fedorainfracloud.org/coprs/dawid/better_fonts/
