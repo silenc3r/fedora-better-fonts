@@ -13,6 +13,6 @@ COPR repository: https://copr.fedorainfracloud.org/coprs/dawid/better_fonts/
     `dnf copr dawid enable dawid/better_fonts`  
 
 - install packages:  
-    dnf install fontconfig-enhanced-defaults fontconfig-font-replacements  
+    `dnf install fontconfig-enhanced-defaults fontconfig-font-replacements`  
 
 - log out and log in again or restart computer to see the effect  
