@@ -7,6 +7,7 @@ COPR repository: https://copr.fedorainfracloud.org/coprs/dawid/better_fonts/
 ## Screenshots
 Before | After
 -------|------
+[Default fonts before](http://i.imgur.com/KOP6CDf.png) | [Default fonts after](http://i.imgur.com/RZXwkar.png)
 [Facebook before](http://i.imgur.com/D5RJrvH.png) | [Facebook after](http://i.imgur.com/jmT0efu.png)
 [Flask before](http://i.imgur.com/nEgNh81.png) | [Flask after](http://i.imgur.com/zKfIUEr.png)
 [LWN.net before](http://i.imgur.com/eA9LMz1.png) | [LWN.net after](http://i.imgur.com/Yk6W1fa.png)
