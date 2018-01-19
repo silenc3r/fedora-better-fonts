@@ -1,7 +1,7 @@
 #!/bin/bash
 # Get upstream zip and make source tar.gz
 
-ARCHIVE="oswald-fonts-4.0"
+ARCHIVE="oswald-fonts-4.100"
 TMPDIR=$(mktemp -d --tmpdir=/var/tmp getoswald-XXXXXXXXXX)
 [ $? != 0 ] && exit 1
 umask 022

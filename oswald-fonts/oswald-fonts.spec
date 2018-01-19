@@ -2,8 +2,8 @@
 %global fontconf 64-%{fontname}.conf
 
 Name:    %{fontname}-fonts
-Version: 4.0
-Release: 2%{?dist}
+Version: 4.100
+Release: 1%{?dist}
 Summary: Oswald is a reworking of the classic Gothic and Grotesque type styles
 
 Group:   User Interface/X
@@ -49,6 +49,9 @@ sed -i 's/\r$//' LICENSE
 %license LICENSE
 
 %changelog
+* Thu Jan 18 2018 Dawid Zych <dawid.zych@yandex.com> - 4.100-1
+- Version update
+
 * Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 4.0-2
 - Update fontconfig and it's priority.
 
