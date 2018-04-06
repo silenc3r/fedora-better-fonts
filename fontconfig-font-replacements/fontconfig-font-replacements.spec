@@ -1,5 +1,5 @@
 Name:    fontconfig-font-replacements
-Version: 0.003
+Version: 0.1
 Release: 1%{?dist}
 Summary: Font replacement rules for popular MS fonts
 
@@ -13,13 +13,12 @@ Source3: 66-aliases-wine-free.conf
 
 BuildArch:     noarch
 BuildRequires: fontpackages-devel
-Requires:      fontpackages-filesystem
 Requires:      adobe-source-code-pro-fonts
 Requires:      archivo-black-fonts
-Requires:      cabin-fonts
 Requires:      courier-prime-fonts
 Requires:      eb-garamond-fonts
 Requires:      fjalla-one-fonts
+Requires:      fontpackages-filesystem
 Requires:      gelasio-fonts
 Requires:      google-croscore-arimo-fonts
 Requires:      google-croscore-cousine-fonts
@@ -30,6 +29,7 @@ Requires:      google-crosextra-carlito-fonts
 Requires:      google-noto-sans-fonts
 Requires:      google-noto-serif-fonts
 Requires:      google-roboto-fonts
+Requires:      lato-fonts
 Requires:      liberation-narrow-fonts
 Requires:      libre-baskerville-fonts
 Requires:      linux-libertine-biolinum-fonts
@@ -72,6 +72,9 @@ ln -s %{_fontconfig_templatedir}/66-aliases-wine-free.conf \
 %{_fontconfig_templatedir}/*
 
 %changelog
+* Fri Apr 05 2018 Dawid Zych <dawid.zych@yandex.com> - 0.1-1
+- Replace cabin with lato
+
 * Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 0.003-1
 - Update font replacement rules
 
