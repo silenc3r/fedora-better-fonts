@@ -17,7 +17,6 @@ Requires:      adobe-source-code-pro-fonts
 Requires:      archivo-black-fonts
 Requires:      courier-prime-fonts
 Requires:      eb-garamond-fonts
-Requires:      fjalla-one-fonts
 Requires:      fontpackages-filesystem
 Requires:      gelasio-fonts
 Requires:      google-croscore-arimo-fonts
@@ -36,6 +35,7 @@ Requires:      linux-libertine-biolinum-fonts
 Requires:      merriweather-fonts
 Requires:      merriweather-sans-fonts
 Requires:      mozilla-fira-sans-fonts
+Requires:      passion-one-fonts
 Requires:      signika-fonts
 
 %description
