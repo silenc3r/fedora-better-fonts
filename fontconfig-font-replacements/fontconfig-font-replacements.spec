@@ -1,6 +1,6 @@
 Name:    fontconfig-font-replacements
-Version: 0.1
-Release: 1%{?dist}
+Version: 0.4
+Release: 2%{?dist}
 Summary: Font replacement rules for popular MS fonts
 
 Group:   System Environment/Libraries
@@ -22,7 +22,6 @@ Requires:      fontpackages-filesystem
 Requires:      gelasio-fonts
 Requires:      google-croscore-arimo-fonts
 Requires:      google-croscore-cousine-fonts
-Requires:      google-croscore-symbolneu-fonts
 Requires:      google-croscore-tinos-fonts
 Requires:      google-crosextra-caladea-fonts
 Requires:      google-crosextra-carlito-fonts
@@ -32,6 +31,7 @@ Requires:      google-roboto-fonts
 Requires:      lato-fonts
 Requires:      liberation-narrow-fonts
 Requires:      libre-baskerville-fonts
+Requires:      libreoffice-opensymbol-fonts
 Requires:      linux-libertine-biolinum-fonts
 Requires:      merriweather-fonts
 Requires:      merriweather-sans-fonts
@@ -72,6 +72,13 @@ ln -s %{_fontconfig_templatedir}/66-aliases-wine-free.conf \
 %{_fontconfig_templatedir}/*
 
 %changelog
+* Thu Apr 12 2018 Dawid Zych <dawid.zych@yandex.com> - 0.4-2
+- Update version
+
+* Thu Apr 12 2018 Dawid Zych <dawid.zych@yandex.com> - 0.4-1
+- Replace SymbolNeu with Open Symbol
+- Fix package versioning
+
 * Fri Apr 05 2018 Dawid Zych <dawid.zych@yandex.com> - 0.1-1
 - Replace cabin with lato
 
