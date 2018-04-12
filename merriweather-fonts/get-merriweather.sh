@@ -1,7 +1,7 @@
 #!/bin/bash
 # Get upstream zip and make source tar.gz
 
-ARCHIVE="merriweather-fonts-1.584"
+ARCHIVE="merriweather-fonts-2.002"
 TMPDIR=$(mktemp -d --tmpdir=/var/tmp getmerriweather-XXXXXXXXXX)
 [ $? != 0 ] && exit 1
 umask 022

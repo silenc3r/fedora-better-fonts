@@ -2,8 +2,8 @@
 %global fontconf 62-%{fontname}.conf
 
 Name:    %{fontname}-fonts
-Version: 1.584
-Release: 2%{?dist}
+Version: 2.002
+Release: 1%{?dist}
 Summary: Merriweather Serif font family by Eben Sorkin
 
 License: OFL
@@ -46,6 +46,9 @@ sed -i 's/\r$//' LICENSE
 %license LICENSE
 
 %changelog
+* Thu Apr 11 2018 Dawid Zych <dawid.zych@yandex.com> - 2.002-1
+- Update to new version
+
 * Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 1.584-2
 - Update fontconfig and it's priority.
 
