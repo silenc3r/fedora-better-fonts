@@ -1,7 +1,7 @@
 Name:    fontconfig-font-replacements
-Version: 0.4
-Release: 2%{?dist}
-Summary: Font replacement rules for popular MS fonts
+Version: 0.5
+Release: 1%{?dist}
+Summary: Font replacement rules for popular proprietary fonts.
 
 Group:   System Environment/Libraries
 License: MIT
@@ -27,6 +27,7 @@ Requires:      google-crosextra-carlito-fonts
 Requires:      google-noto-sans-fonts
 Requires:      google-noto-serif-fonts
 Requires:      google-roboto-fonts
+Requires:      komika-text-fonts
 Requires:      lato-fonts
 Requires:      liberation-narrow-fonts
 Requires:      libre-baskerville-fonts
@@ -35,12 +36,15 @@ Requires:      linux-libertine-biolinum-fonts
 Requires:      merriweather-fonts
 Requires:      merriweather-sans-fonts
 Requires:      mozilla-fira-sans-fonts
+Requires:      mozilla-fira-mono-fonts
 Requires:      passion-one-fonts
-Requires:      signika-fonts
+# Requires:      signika-fonts
 
 %description
-Font replacement rules for popular MS fonts. Based on Bohoomil's fontconfig
-ultimate. This package will install all required fonts as dependencies.
+Font replacement rules for popular proprietary fonts. This includes
+Microsoft TrueType Core Fonts, Microsoft ClearType Font Collection and
+some others.
+Based on Bohoomil's fontconfig ultimate.
 
 %prep
 
@@ -72,6 +76,16 @@ ln -s %{_fontconfig_templatedir}/66-aliases-wine-free.conf \
 %{_fontconfig_templatedir}/*
 
 %changelog
+* Fri Apr 13 2018 Dawid Zych <dawid.zych@yandex.com> - 0.5-1
+- Remove some less common Lucida variants substitutions
+- Substitute Lucida Console with Fira Mono
+- Substitute Lucida Sans fonts with Source Code Pro
+- Substitute Consolas with Fira Mono
+- Substitute Helvetica Neue with Source Code Pro
+- Substitute Menlo with Cousine
+- Substitute Wingdings with Open Symbol
+- Substitute Comic Sans MS with Komika Text
+
 * Thu Apr 12 2018 Dawid Zych <dawid.zych@yandex.com> - 0.4-2
 - Update version
 
