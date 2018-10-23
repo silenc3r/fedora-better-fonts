@@ -8,7 +8,7 @@ Summary: Ubuntu font family
 
 License: Ubuntu Font Licence 1.0
 URL:     https://font.ubuntu.com/
-Source0: https://font.ubuntu.com/download/ubuntu-font-family-0.83.zip
+Source0: https://assets.ubuntu.com/v1/fad7939b-ubuntu-font-family-0.83.zip
 Source1: %{fontname}-fontconfig.conf
 
 BuildArch:     noarch
