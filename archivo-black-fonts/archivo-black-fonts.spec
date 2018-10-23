@@ -9,7 +9,7 @@ Summary: Grotesque sans-serif typeface derived from Chivo. Black style
 Group:   User Interface/X
 License: OFL
 URL:     https://omnibus-type.com/
-Source0: https://omnibus-type.com/download/ArchivoBlack-for-Print.zip
+Source0: https://www.omnibus-type.com/wp-content/uploads/Archivo-Black.zip
 Source1: %{fontname}-fontconfig.conf
 
 BuildArch:     noarch
