@@ -7,8 +7,8 @@ Release: 1%{?dist}
 Summary: Ubuntu font family
 
 License: Ubuntu Font Licence 1.0
-URL:     http://font.ubuntu.com/
-Source0: http://font.ubuntu.com/download/ubuntu-font-family-0.83.zip
+URL:     https://font.ubuntu.com/
+Source0: https://font.ubuntu.com/download/ubuntu-font-family-0.83.zip
 Source1: %{fontname}-fontconfig.conf
 
 BuildArch:     noarch

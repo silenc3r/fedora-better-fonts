@@ -8,8 +8,8 @@ Summary: Grotesque sans-serif typeface derived from Chivo. Black style
 
 Group:   User Interface/X
 License: OFL
-URL:     http://omnibus-type.com/
-Source0: http://omnibus-type.com/download/ArchivoBlack-for-Print.zip
+URL:     https://omnibus-type.com/
+Source0: https://omnibus-type.com/download/ArchivoBlack-for-Print.zip
 Source1: %{fontname}-fontconfig.conf
 
 BuildArch:     noarch
