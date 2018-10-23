@@ -22,7 +22,7 @@ derived from Chivo. Black style.
 
 
 %prep
-%setup -q -n ArchivoBlack-for-Print
+%setup -q -n Archivo-Black
 
 %build
 
