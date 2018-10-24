@@ -8,7 +8,7 @@ Summary: Libre Baskerville font designed by Pablo Impallari
 Group:   User Interface/X
 License: OFL
 URL:     https://www.impallari.com/
-Source0: https://fonts.google.com/download?family=Libre%20Baskerville
+Source0: https://www.impallari.com/media/uploads/prosources/update-86-source.zip
 Source1: %{fontname}-fontconfig.conf
 
 BuildArch:     noarch
