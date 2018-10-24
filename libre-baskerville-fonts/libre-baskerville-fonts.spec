@@ -7,8 +7,8 @@ Release: 2%{?dist}
 Summary: Libre Baskerville font designed by Pablo Impallari
 Group:   User Interface/X
 License: OFL
-URL:     https://www.impallari.com/
-Source0: https://www.impallari.com/media/uploads/prosources/update-86-source.zip
+URL:     https://fonts.google.com/specimen/Libre+Baskerville
+Source0: %{name}-%{version}.tar.xz
 Source1: %{fontname}-fontconfig.conf
 
 BuildArch:     noarch
@@ -23,8 +23,7 @@ allow it to work well for reading on-screen.
 
 
 %prep
-%setup -q -c
-cp 'Libre Baskerville v%{version}'/{*.ttf,*.txt} .
+%setup -q
 
 %build
 
@@ -40,15 +39,11 @@ install -m 0644 -p %{SOURCE1} \
 ln -s %{_fontconfig_templatedir}/%{fontconf} \
       %{buildroot}%{_fontconfig_confdir}/%{fontconf}
 
-cp OFL.txt LICENSE
-for _file in FONTLOG.txt LICENSE; do
-    chmod 0644 $_file
-    sed -i 's/\r$//' $_file
-done
+mv OFL.txt LICENSE
+sed -i 's/\r$//' LICENSE
 
 %_font_pkg -f %{fontconf} *.ttf
 %license LICENSE
-%doc FONTLOG.txt
 
 %changelog
 * Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> 1.0-2

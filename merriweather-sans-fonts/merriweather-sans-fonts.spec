@@ -10,7 +10,6 @@ License:  OFL
 URL:      www.sorkintype.com
 Source0: %{name}-%{version}.tar.xz
 Source1: %{fontname}-fontconfig.conf
-Source2: get-%{fontname}.sh
 
 BuildArch:     noarch
 BuildRequires: fontpackages-devel

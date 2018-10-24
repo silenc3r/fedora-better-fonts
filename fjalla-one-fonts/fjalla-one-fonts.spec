@@ -11,7 +11,6 @@ License: OFL
 URL:     https://fonts.google.com/specimen/Fjalla+One
 Source0: %{name}-%{version}.tar.xz
 Source1: %{fontname}-fontconfig.conf
-Source2: get-%{fontname}.sh
 
 BuildArch:     noarch
 BuildRequires: fontpackages-devel
