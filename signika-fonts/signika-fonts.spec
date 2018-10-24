@@ -8,8 +8,8 @@ Summary: Sans-serif font with a gentle character
 
 Group:   User Interface/X
 License: OFL
-URL:     http://fontfabric.com/signika-font/
-Source0: http://www.fontfabric.com/downfont/signika.zip
+URL:     https://fontfabric.com/signika-font/
+Source0: https://www.fontfabric.com/downfont/signika.zip
 Source1: %{fontname}-fontconfig.conf
 
 BuildArch:     noarch

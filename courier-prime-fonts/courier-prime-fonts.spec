@@ -8,8 +8,8 @@ Summary: A free, improved, classical monospaced typeface
 
 Group:   User Interface/X
 License: OFL
-URL:     http://quoteunquoteapps.com/courierprime/
-Source0: http://quoteunquoteapps.com/downloads/courier-prime.zip
+URL:     https://quoteunquoteapps.com/courierprime/
+Source0: https://quoteunquoteapps.com/downloads/courier-prime.zip
 Source1: %{fontname}-fontconfig.conf
 
 BuildArch:     noarch
