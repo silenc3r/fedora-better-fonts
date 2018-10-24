@@ -24,3 +24,7 @@ Before | After
 3. Install packages:  
     `dnf install fontconfig-enhanced-defaults fontconfig-font-replacements`  
 4. Log out and log in again or restart computer to see the effect  
+
+## Building locally
+
+Check [build_instructions](build_instructions.md)
