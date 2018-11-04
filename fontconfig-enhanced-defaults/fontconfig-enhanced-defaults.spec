@@ -1,6 +1,6 @@
 Name:    fontconfig-enhanced-defaults
 Version: 0.4
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Enhanced default settings for Fontconfig and FreeType
 
 Group:   System Environment/Libraries
@@ -12,7 +12,7 @@ Source1: 19-enhanced-defaults.conf
 BuildArch:     noarch
 BuildRequires: fontpackages-devel
 Requires:      fontpackages-filesystem
-Requires:      freetype-freeworld
+Requires:      freetype
 
 %description
 Font configuration files that enable subpixel rendering.
