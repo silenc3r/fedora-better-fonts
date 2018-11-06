@@ -12,7 +12,12 @@ Source1: 19-enhanced-defaults.conf
 BuildArch:     noarch
 BuildRequires: fontpackages-devel
 Requires:      fontpackages-filesystem
-Requires:      freetype
+
+%if 0%{?fedora} >= 29
+Requires: freetype
+%else
+Requires: freetype-freeworld
+%endif
 
 %description
 Font configuration files that enable subpixel rendering.
@@ -43,6 +48,9 @@ install -m 0644 -p %{SOURCE0} \
 %{_datadir}/glib-2.0/schemas/*
 
 %changelog
+* Tue Nov 06 2018 Dawid Zych <dawid.zych@yandex.com> - 0.4.2
+- Use stock Freetype on Fedora 29 and newer
+
 * Fri Apr 06 2018 Dawid Zych <dawid.zych@yandex.com> - 0.4-1
 - Add enhanced-defaults.conf again just in case
 
