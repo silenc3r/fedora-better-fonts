@@ -1,6 +1,6 @@
 Name:    fontconfig-font-replacements
 Version: 0.5
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Font replacement rules for popular proprietary fonts.
 
 Group:   System Environment/Libraries
@@ -29,7 +29,6 @@ Requires:      google-noto-serif-fonts
 Requires:      google-roboto-fonts
 Requires:      komika-text-fonts
 Requires:      lato-fonts
-Requires:      liberation-narrow-fonts
 Requires:      libre-baskerville-fonts
 Requires:      libreoffice-opensymbol-fonts
 Requires:      linux-libertine-biolinum-fonts
@@ -39,6 +38,10 @@ Requires:      mozilla-fira-sans-fonts
 Requires:      mozilla-fira-mono-fonts
 Requires:      passion-one-fonts
 # Requires:      signika-fonts
+
+%if 0%{?fedora} <= 29
+Requires: liberation-narrow-fonts
+%endif
 
 %description
 Font replacement rules for popular proprietary fonts. This includes
@@ -76,6 +79,9 @@ ln -s %{_fontconfig_templatedir}/66-aliases-wine-free.conf \
 %{_fontconfig_templatedir}/*
 
 %changelog
+* Wed Aug 28 2019 Dawid Zych <dawid.zych@yandex.com> - 0.5-2
+- Remove liberation-narrow-fonts from Fedora 30+
+
 * Fri Apr 13 2018 Dawid Zych <dawid.zych@yandex.com> - 0.5-1
 - Remove some less common Lucida variants substitutions
 - Substitute Lucida Console with Fira Mono
