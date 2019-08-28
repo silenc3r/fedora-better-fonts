@@ -1,6 +1,6 @@
 Name:    fontconfig-enhanced-defaults
 Version: 0.4
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: Enhanced default settings for Fontconfig and FreeType
 
 Group:   System Environment/Libraries
@@ -12,12 +12,7 @@ Source1: 19-enhanced-defaults.conf
 BuildArch:     noarch
 BuildRequires: fontpackages-devel
 Requires:      fontpackages-filesystem
-
-%if 0%{?fedora} >= 29
-Requires: freetype
-%else
-Requires: freetype-freeworld
-%endif
+Requires:      freetype
 
 %description
 Font configuration files that enable subpixel rendering.
@@ -48,6 +43,9 @@ install -m 0644 -p %{SOURCE0} \
 %{_datadir}/glib-2.0/schemas/*
 
 %changelog
+* Wed Aug 28 2019 Dawid Zych <dawid.zych@yandex.com> - 0.4.3
+- Drop support for Fedora < 29
+
 * Tue Nov 06 2018 Dawid Zych <dawid.zych@yandex.com> - 0.4.2
 - Use stock Freetype on Fedora 29 and newer
 
