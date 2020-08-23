@@ -35,7 +35,7 @@ install -m 0755 -d %{buildroot}%{_fontconfig_templatedir} \
 
 install -m 0644 -p %{SOURCE1} \
         %{buildroot}%{_fontconfig_templatedir}/%{fontconf}
-ln -s %{_fontconfig_templatedir}/%{fontconf}.conf \
+ln -s %{_fontconfig_templatedir}/%{fontconf} \
       %{buildroot}%{_fontconfig_confdir}/%{fontconf}
 
 %_font_pkg -f *-%{fontname}.conf *.ttf
