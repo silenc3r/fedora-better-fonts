@@ -3,7 +3,7 @@
 
 Name:    %{fontname}-fonts
 Version: 0.83
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Ubuntu font family
 
 License: Ubuntu Font Licence 1.0
@@ -43,5 +43,7 @@ ln -s %{_fontconfig_templatedir}/%{fontconf} \
 %doc CONTRIBUTING.txt FONTLOG.txt README.txt
 
 %changelog
+* Thu Oct 29 2020 Dawid Zych <dawid.zych@yandex.com> - 0.83-2
+- Fix broken symlink by @upanasiuk
 * Fri Jan 06 2017 Dawid Zych <dawid.zych@yandex.com> - 0.83-1
 - Initial packaging.
