@@ -10,7 +10,7 @@ Download source packages:
 
 Build package locally:
 
-    fedpkg mockbuild --release f29
+    fedpkg --release f33 mockbuild 
 
 Build in copr:
 

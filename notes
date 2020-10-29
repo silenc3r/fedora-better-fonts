@@ -10,11 +10,40 @@ Lucida Sans Unicode:
 Helvetica Neue:
     - Noto Sans
 
+Comic Sans:
+    - Calluna Sans
+    - Kalam
+    - Patrick Hand
+    - Gloria Hallelujah
+    - Indie Flower - really playful
+
+    - Handlee - no special chars
+    - Schoolbell - nope
+
+TODO:
+    make list of MS fonts by type (serif, sans-serif)
+
+
+Tools:
+    http://typographing.com
+
+Android fonts:
+    https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/data/fonts/fonts.xml
+
+Problems:
+https://blog.mozilla.org/nnethercote/2019/07/25/the-rust-compiler-is-still-getting-faster/
+
 links:
-* https://blog.spoongraphics.co.uk/articles/the-best-free-alternatives-to-the-most-popular-fonts
-* http://www.designtheway.com/most-used-fonts-alternative-google-fonts/
-* https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
+- https://blog.spoongraphics.co.uk/articles/the-best-free-alternatives-to-the-most-popular-fonts
+- http://www.designtheway.com/most-used-fonts-alternative-google-fonts/
+- https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
 
 nice looking sites:
-* http://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/
+- http://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/
+Georgia usage:
+- https://josebrowne.com/on-coding-ego-and-attention/
+TeX Gyre Scholar Regular
+- http://jepsen.io/analyses/postgresql-12.3
+Cambria
+- https://www.forbes.com/sites/erikkain/2013/07/02/quake-iii-arena-bots-reportedly-stop-fighting-after-4-year-match/#5aab55076233
