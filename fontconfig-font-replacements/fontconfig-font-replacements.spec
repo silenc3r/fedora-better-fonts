@@ -1,6 +1,6 @@
 Name:    fontconfig-font-replacements
-Version: 0.5
-Release: 2%{?dist}
+Version: 0.6
+Release: 1%{?dist}
 Summary: Font replacement rules for popular proprietary fonts.
 
 Group:   System Environment/Libraries
@@ -32,16 +32,11 @@ Requires:      lato-fonts
 Requires:      libre-baskerville-fonts
 Requires:      libreoffice-opensymbol-fonts
 Requires:      linux-libertine-biolinum-fonts
-Requires:      merriweather-fonts
-Requires:      merriweather-sans-fonts
-Requires:      mozilla-fira-sans-fonts
 Requires:      mozilla-fira-mono-fonts
+Requires:      mozilla-fira-sans-fonts
 Requires:      passion-one-fonts
-# Requires:      signika-fonts
-
-%if 0%{?fedora} <= 29
-Requires: liberation-narrow-fonts
-%endif
+Requires:      sorkintype-merriweather-fonts
+Requires:      sorkintype-merriweather-sans-fonts
 
 %description
 Font replacement rules for popular proprietary fonts. This includes
@@ -79,6 +74,9 @@ ln -s %{_fontconfig_templatedir}/66-aliases-wine-free.conf \
 %{_fontconfig_templatedir}/*
 
 %changelog
+* Fri Oct 30 2020 Dawid Zych <dawid.zych@yandex.com> - 0.6-1
+- Use Merriweather fonts from Fedora repo
+
 * Wed Aug 28 2019 Dawid Zych <dawid.zych@yandex.com> - 0.5-2
 - Remove liberation-narrow-fonts from Fedora 30+
 
