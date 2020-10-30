@@ -2,8 +2,8 @@
 %global fontconf 64-%{fontname}.conf
 
 Name:    %{fontname}-fonts
-Version: 1.0004
-Release: 2%{?dist}
+Version: 1.001
+Release: 1%{?dist}
 Summary: Grotesque sans-serif typeface derived from Chivo. Black style
 
 Group:   User Interface/X
@@ -28,7 +28,7 @@ derived from Chivo. Black style.
 
 %install
 install -m 0755 -d %{buildroot}%{_fontdir}
-install -m 0644 -p *.ttf %{buildroot}%{_fontdir}
+install -m 0644 -p otf/*.otf %{buildroot}%{_fontdir}
 
 install -m 0755 -d %{buildroot}%{_fontconfig_templatedir} \
                    %{buildroot}%{_fontconfig_confdir}
@@ -41,10 +41,14 @@ ln -s %{_fontconfig_templatedir}/%{fontconf} \
 cp -p OFL.txt LICENSE
 sed -i 's/\r$//' LICENSE
 
-%_font_pkg -f %{fontconf} *.ttf
+%_font_pkg -f %{fontconf} *.otf
 %license LICENSE
 
 %changelog
+* Fri Oct 30 2020 Dawid Zych <dawid.zych@yandex.com> 1.001-1
+- Use otf version of the font
+- Bump version
+
 * Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> 1.0004-2
 - Update fontconfig and it's priority.
 
