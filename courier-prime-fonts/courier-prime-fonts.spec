@@ -3,13 +3,13 @@
 
 Name:    %{fontname}-fonts
 Version: 1.203
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: A free, improved, classical monospaced typeface
 
 Group:   User Interface/X
 License: OFL
 URL:     https://quoteunquoteapps.com/courierprime/
-Source0: https://quoteunquoteapps.com/downloads/courier-prime.zip
+Source0: https://quoteunquoteapps.com/courierprime/downloads/courier-prime.zip
 Source1: %{fontname}-fontconfig.conf
 
 BuildArch:     noarch
@@ -49,6 +49,9 @@ sed -i 's/\r$//' LICENSE-FAQ
 %doc "Read me.txt"
 
 %changelog
+* Fri Oct 30 2020 Dawid Zych <dawid.zych@yandex.com> - 1.203-3
+- Update download link.
+
 * Wed Jan 11 2017 Dawid Zych <dawid.zych@yandex.com> - 1.203-2
 - Update fontconfig and it's priority.
 
