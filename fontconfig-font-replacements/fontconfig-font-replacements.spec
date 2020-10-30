@@ -15,8 +15,8 @@ BuildArch:     noarch
 BuildRequires: fontpackages-devel
 Requires:      adobe-source-code-pro-fonts
 Requires:      archivo-black-fonts
+Requires:      catharsis-cormorant-garamond-fonts
 Requires:      courier-prime-fonts
-Requires:      eb-garamond-fonts
 Requires:      fontpackages-filesystem
 Requires:      gelasio-fonts
 Requires:      google-croscore-arimo-fonts
@@ -76,6 +76,7 @@ ln -s %{_fontconfig_templatedir}/66-aliases-wine-free.conf \
 %changelog
 * Fri Oct 30 2020 Dawid Zych <dawid.zych@yandex.com> - 0.6-1
 - Use Merriweather fonts from Fedora repo
+- Replace EB Garamond with Cormorant Garamond
 
 * Wed Aug 28 2019 Dawid Zych <dawid.zych@yandex.com> - 0.5-2
 - Remove liberation-narrow-fonts from Fedora 30+
