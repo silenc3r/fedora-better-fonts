@@ -27,7 +27,7 @@ Check what font is matched with given name:
 
     fc-match font-name
 
-Get font information:
+Get font information (provided by texlive-lcdftypetools):
 
     otfinfo --info fontname.ttf
 
