@@ -4,7 +4,7 @@
 %forgemeta
 
 Version: 1.006
-Release: 2%{?dist}
+Release: 3%{?dist}
 URL:     %{forgeurl}
 
 %global foundry       SorkinType
@@ -15,7 +15,7 @@ URL:     %{forgeurl}
 
 %global fontfamily    Gelasio
 %global fontsummary   Gelasio is an original typeface which is metrics compatible with Georgia
-%global fonts         fonts/ttf/*ttf fonts/variable/*ttf
+%global fonts         fonts/ttf/*ttf
 %global fontconfs     %{SOURCE10}
 %global fontpkgheader %{expand:
 Provides:  gelasio-fonts
@@ -58,7 +58,12 @@ This package provides optional documentation files shippend with
 %files doc
 %defattr(644, root, root, 0755)
 %license OFL.txt
+%doc Test*Documents/*pdf
 
 %changelog
+* Mon Nov 02 2020 Dawid Zych <dawid.zych@yandex.com> - 1.006-3
+- Skip variable fonts
+- Add additional docs
+
 * Mon Nov 02 2020 Dawid Zych <dawid.zych@yandex.com> - 1.006-2
 - Initial packaging
