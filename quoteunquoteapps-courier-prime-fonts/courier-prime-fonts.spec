@@ -18,6 +18,7 @@ URL:     https://quoteunquoteapps.com/courierprime/
 %global fonts         fonts/ttf/*ttf
 %global fontconfs     %{SOURCE10}
 %global fontpkgheader %{expand:
+Provides:  courier-prime-fonts
 Obsoletes: courier-prime-fonts < %{version}-%{release}
 }
 %global fontdescription %{expand:
