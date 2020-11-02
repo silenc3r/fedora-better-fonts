@@ -1,6 +1,6 @@
 Name:    fontconfig-font-replacements
 Version: 0.6
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Font replacement rules for popular proprietary fonts.
 
 Group:   System Environment/Libraries
@@ -15,7 +15,6 @@ BuildArch:     noarch
 BuildRequires: fontpackages-devel
 Requires:      adobe-source-code-pro-fonts
 Requires:      archivo-black-fonts
-Requires:      catharsis-cormorant-garamond-fonts
 Requires:      courier-prime-fonts
 Requires:      fontpackages-filesystem
 Requires:      gelasio-fonts
@@ -32,11 +31,14 @@ Requires:      lato-fonts
 Requires:      libre-baskerville-fonts
 Requires:      libreoffice-opensymbol-fonts
 Requires:      linux-libertine-biolinum-fonts
-Requires:      mozilla-fira-mono-fonts
 Requires:      mozilla-fira-sans-fonts
+Requires:      mozilla-fira-mono-fonts
 Requires:      passion-one-fonts
-Requires:      sorkintype-merriweather-fonts
-Requires:      sorkintype-merriweather-sans-fonts
+# Requires:      signika-fonts
+
+Requires:      eb-garamond-fonts
+Requires:      merriweather-fonts
+Requires:      merriweather-sans-fonts
 
 %description
 Font replacement rules for popular proprietary fonts. This includes
@@ -74,9 +76,8 @@ ln -s %{_fontconfig_templatedir}/66-aliases-wine-free.conf \
 %{_fontconfig_templatedir}/*
 
 %changelog
-* Fri Oct 30 2020 Dawid Zych <dawid.zych@yandex.com> - 0.6-1
-- Use Merriweather fonts from Fedora repo
-- Replace EB Garamond with Cormorant Garamond
+* Mon Nov 02 2020 Dawid Zych <dawid.zych@yandex.com> - 0.6-1
+- Last build for Fedora 31
 
 * Wed Aug 28 2019 Dawid Zych <dawid.zych@yandex.com> - 0.5-2
 - Remove liberation-narrow-fonts from Fedora 30+
