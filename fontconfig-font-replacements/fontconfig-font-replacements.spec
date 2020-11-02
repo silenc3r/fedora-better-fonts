@@ -1,6 +1,6 @@
 Name:    fontconfig-font-replacements
 Version: 0.6
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Font replacement rules for popular proprietary fonts.
 
 Group:   System Environment/Libraries
@@ -34,6 +34,7 @@ Requires:      libreoffice-opensymbol-fonts
 Requires:      linux-libertine-biolinum-fonts
 Requires:      mozilla-fira-mono-fonts
 Requires:      mozilla-fira-sans-fonts
+Requires:      open-sans-fonts
 Requires:      passion-one-fonts
 Requires:      sorkintype-merriweather-fonts
 Requires:      sorkintype-merriweather-sans-fonts
@@ -74,6 +75,9 @@ ln -s %{_fontconfig_templatedir}/66-aliases-wine-free.conf \
 %{_fontconfig_templatedir}/*
 
 %changelog
+* Mon Nov 02 2020 Dawid Zych <dawid.zych@yandex.com> - 0.6-2
+- Add Open Sans as requirement
+
 * Fri Oct 30 2020 Dawid Zych <dawid.zych@yandex.com> - 0.6-1
 - Use Merriweather fonts from Fedora repo
 - Replace EB Garamond with Cormorant Garamond
