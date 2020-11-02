@@ -5,11 +5,12 @@ proprietary fonts from Microsoft and Apple operating systems.
 It makes your web browsing more aesthetically pleasing - you won't be seeing
 DejaVu Sans font on every damn webpage.
 
-Packages from this repository don't change your hinting or antialiasing settings.  
+#### Subpixel (rgb) antialiasing
 Default for Fedora are slight hinting and grayscale antialiasing.  
 Some people find subpixel antialiasing to look better - others can't stand
-color fringing caused by it.  If you want to try it for yourself change font
-settings in `Gnome Tweaks` or run this command in your terminal:
+color fringing caused by it. If you want to try it for yourself install
+`fontconfig-enhanced-defaults` package. You can also enable it manually
+in `Gnome Tweaks` or by running following command in terminal:
 
 `dconf write /org/gnome/settings-daemon/plugins/xsettings/antialiasing "'rgba'"`
 
@@ -26,7 +27,9 @@ COPR repository: https://copr.fedorainfracloud.org/coprs/dawid/better_fonts/
     `sudo dnf copr enable dawid/better_fonts -y`  
 2. Install packages:  
     `sudo dnf install fontconfig-font-replacements -y`  
-3. Log out and log in again or restart computer to see the effect  
+3. (Optional) Enable subpixel (rgb) antialiasing:  
+    `sudo dnf install fontconfig-enhanced-defaults -y`  
+4. Log out and log in again or restart computer to see the effect  
 
 ## Screenshots
 (probably outdated)
