@@ -19,12 +19,20 @@ to change back to grayscale (default) antialiasing:
 `dconf write /org/gnome/settings-daemon/plugins/xsettings/antialiasing "'grayscale'"`
 
 
-COPR repository: https://copr.fedorainfracloud.org/coprs/dawid/better_fonts/
+COPR repository: https://copr.fedorainfracloud.org/coprs/hyperreal/better_fonts/
 
 ## Installation instructons
 
+On `rpm-ostree` based distros, replace `dnf` with `rpm-ostree`.
+
 1. Enable COPR repository:  
-    `sudo dnf copr enable dawid/better_fonts -y`  
+    `sudo dnf copr enable hyperreal/better_fonts -y`  
+   Or on immutable variants (e.g. Silverblue):  
+    ```
+    . /etc/os-release
+    wget https://copr.fedorainfracloud.org/coprs/hyperreal/better_fonts/repo/fedora-$VERSION_ID/hyperreal-better_fonts-fedora-$VERSION_ID.repo -O /tmp/copr_fonts.repo   
+    sudo mv /tmp/copr_fonts.repo /etc/yum.repos.d/better_fonts_fedora.repo   
+    ```
 2. Install packages:  
     `sudo dnf install fontconfig-font-replacements -y`  
 3. (Optional) Enable subpixel (rgb) antialiasing:  
